@@ -280,9 +280,11 @@ body {
   }
 }
 .result-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 2px 0;
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 15px;
 }
 
 .result-name {
@@ -291,6 +293,5 @@ body {
 
 .result-value {
   text-align: right;
-  min-width: 50px;
   font-variant-numeric: tabular-nums;
 }
